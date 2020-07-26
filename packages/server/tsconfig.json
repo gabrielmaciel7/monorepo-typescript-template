@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
@@ -7,7 +8,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
-    "typeRoots": ["./node_modules/@types", "./src/@types"],
+    "typeRoots": ["./node_modules/@types", "./src/@types", "../../node_modules/@types"],
     "esModuleInterop": true,
     "resolveJsonModule": true,
 
@@ -24,5 +25,5 @@
       "@config/*": ["./src/config/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["./src/**/*"]
 }
